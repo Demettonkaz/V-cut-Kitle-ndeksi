@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anaekran"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+
+    <TextView
+        android:id="@+id/TextViewKilo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:fontFamily="@font/compass"
+        android:gravity="center"
+        android:text="Kilonuz (kg)"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewKilo"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/compassbold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewKilo" />
+
+    <SeekBar
+        android:id="@+id/SeekBarKilo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView"
+        android:layout_marginBottom="34dp"
+        android:indeterminate="false"
+        android:max="200"
+        android:min="20"
+        android:padding="30dp"
+        android:progress="110"
+        android:progressDrawable="@drawable/track"
+        android:thumb="@drawable/thumb"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonIleri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ButtonIleri"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SeekBarKilo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="133dp"
+        android:background="@drawable/ovallestir"
+        android:text="İLERİ"
+        android:textColor="#ff8f98"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
